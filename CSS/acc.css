@@ -1,0 +1,226 @@
+@import url(googlefont.css);
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color:#FCF6F5FF !important;
+    font-family: myfont !important;
+}
+.navbar
+{
+    background-color:#990011FF;
+    box-shadow: 0px 0px 30px 0px  grey;
+}
+.navbar ul
+{
+    margin-left: 45%;
+}
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .navbar ul
+    {
+        margin-left: 0;
+        padding: 5px;
+    } 
+    .navbar a
+{
+    width: 80% !important;
+     
+}
+
+}
+
+.navbar img 
+{
+    width: 20%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.navbar li
+{
+    padding: 5px;
+}
+.navbar li a
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.search
+{
+  margin-top: 110px !important;
+}
+.avilable-books a
+{
+    color: #990011FF;
+    text-decoration: none;
+}
+.lik-btn
+{
+    color: #990011FF !important;
+    border: #990011FF 1px solid !important;
+}
+.lik-btn:hover
+{
+    color: white !important;
+   background-color: #990011FF !important;
+}
+.books img:hover
+{
+    transform: scale(1.1);
+}
+
+.books h5
+{
+    color: black;
+    text-decoration: none !important;
+}
+.books h5:hover
+{
+    color: #990011FF;
+   
+}
+.categories
+{   background-image: url(../img/catagoury/img1.jpg);
+    width: 100%;
+    height: 73vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.categories1
+{   background-image: url(../img/catagoury/img2.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.categories2
+{   background-image: url(../img/catagoury/img3.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.categories3
+{   background-image: url(../img/catagoury/img4.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.categories4
+{   background-image: url(../img/catagoury/img5.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.categories5
+{   
+    background-image: url(../img/catagoury/img1.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius:10px;
+}
+.blur
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+.categories:hover,
+.categories1:hover,
+.categories2:hover,
+.categories3:hover,
+.categories4:hover,
+.categories5:hover
+{  
+   
+    transform: scale(1.1);
+    color: #990011FF;
+}
+.categories h1:hover,
+.categories1 h1:hover,
+.categories2 h1:hover,
+.categories3 h2:hover,
+.categories4 h2:hover,
+.categories5 h2:hover
+{ 
+    color: #990011FF !important;
+}
+.client img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #990011FF 3px solid;
+    margin-left: 45%;
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .client img
+{
+    
+    margin-left: 35%;
+}
+   
+}
+.account
+{
+    margin-top: 150px !important;
+}
+
+.footer
+{
+    background-color: #990011FF;
+    width: 100% !important;
+}
+.footer p
+{
+   margin: 5px;
+}
+.footer a
+{
+    color: white;
+    text-decoration: none;
+}
+.social-media
+{
+    letter-spacing: 15px;
+}
+.bi-facebook,.bi-instagram,.bi-twitter
+{
+    
+    color: white;
+    font-size: 20px;
+}
+.copy_right
+{
+    font-size:12px;
+}
+.fixed-div
+{
+    position: fixed;
+}

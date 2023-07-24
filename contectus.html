@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect Us</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="CSS/contect.css">
+	<!-- slider css -->
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css?v2022">
+  	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css?v2022">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- wow feext js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="dist/css/accordion-slider.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>       
+
+<style type="text/css">
+	.container { margin: 50px auto; max-width: 960px; }
+ 
+	 .slick-prev:before,
+	 .slick-next:before {
+	   color: #990011FF;
+	 }
+ 
+ </style>
+</head>
+<body>
+	<!-- navbar start -->
+    <section class="container-fluid fixed-top main-navbar">
+        <div class=" nav navbar navbar-expand-md fixed-top">
+            <a href="#" class="w-25 navbar-brand"><img src="img/logo-removebg-preview.png"  alt="Logo"></a>
+            <button class="navbar-toggler text-white"  type="button" data-bs-toggle="collapse" data-bs-target="#nav-btn">
+                <span class="bi bi-grid-3x3-gap-fill"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="nav-btn">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html"> Home</a></li>
+                <li class="nav-item"><a href="about.html"> About us</a></li>
+                <li class="nav-item"><a href="#categories"> Categories</a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#login"> login </a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#reg"> Register</a></li>
+            </ul>
+            </div>            
+        </div>
+    </section>
+	<!-- navbar end -->
+    <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h1 class="text-center"> login here<button type="button" class="btn btn-sm btn-danger float-end m-2" data-bs-dismiss="modal">&times;</button></h1>
+               <form  action="indexlogin.html">
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Login Id</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="text" name="mobile" placeholder="Login Id / Phone / Email-Id" class="form-control" required>
+            </div>
+
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Password *</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">   
+                <input type="password" name="password" placeholder="Password" class="form-control" required>
+            </div>
+            <div class="input-group mt-3 w-75 mx-auto">   
+            <input type="submit" name="register" value="SignUp" class="btn btn-md btn-info text-white w-100">
+            </div>
+
+
+            <div class="input-group ms-5 mt-3  mx-auto">   
+                <b>Already have an Account?</b>&nbsp;<a href="#" data-bs-toggle="modal" data-bs-target="#reg">Register </a>
+                </div>
+        </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- register here -->
+    <div class="modal fade" id="reg" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h1 class="text-center"> register here<button type="button" class="btn btn-sm btn-danger float-end m-2" data-bs-dismiss="modal">&times;</button></h1>
+            <form  class="needs-validation">
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label for="validationCustom01" class="form-label">Name *</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="text" name="mobile" placeholder="Name" class="form-control" id="validationTooltip01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+            </div>  
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Mobile no.*</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="number" name="mobile" placeholder="Mobile" class="form-control" required>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Email-Id*</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="email" name="mobile" placeholder="email-id" class="form-control" required>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>User-Id*</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="text" name="mobile" placeholder="User-Id" class="form-control" required>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Password *</label>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <input type="text" name="mobile" placeholder="User-Id" class="form-control" required>
+            </div>
+            <div class="input-group mt-2 w-75 mx-auto">
+                <label>Select City*</label>
+            </div>
+            <div class="input-group  mt-2 w-75 mx-auto">
+                <label class="input-group-text" for="inputGroupSelect01">City</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">Rajkot</option>
+                  <option value="2">Ahmedabad</option>
+                  <option value="3">Surat</option>
+                  <option value="4">Vadodra</option>
+                </select>
+              </div>
+              <div class="input-group mt-2 w-75 mx-auto">
+                <label>Area of Interest*</label>
+            </div>
+            <div class="input-group  mt-2 w-75 mx-auto">
+                <label class="input-group-text" for="inputGroupSelect01">City</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="1">Adventure stories</option>
+                  <option value="2">Classics</option>
+                  <option value="3">Crime</option>
+                  <option value="4">Fairy tales, fables, and folk tales</option>
+                  <option value="5">Fantasy</option>
+                  <option value="6">Historical fiction</option>
+                  <option value="7">Horror</option>
+                  <option value="8">Humour and satire</option>
+                  <option value="9">Literary fiction</option>
+                  <option value="10">Mystery</option>
+                  <option value="11">Poetry</option>
+                  <option value="12">Plays</option>
+                  <option value="13">Romance</option>
+                  <option value="14">Science fiction</option>
+                  <option value="15">Short stories</option>
+                  <option value="16">Thrillers</option>
+                  <option value="17">War</option>
+                  <option value="18">Women's fiction</option>
+                  <option value="19">Young adult</option>
+                  <option value="20">Autobiography and memoir</option>
+                  <option value="21">Biography</option>
+                  <option value="22">Essays</option>
+                  <option value="23">Non-fiction novel</option>
+                  <option value="44">Self-help</option>
+                </select>
+              </div>
+              <div class="input-group mt-2 w-75 mx-auto">
+                <label>User-Picture*</label>
+            </div>
+              <div class="input-group mt-2 w-75 mx-auto">
+                <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                <input type="file" class="form-control" id="inputGroupFile01">
+              </div>
+            <div class="input-group mt-3 w-75 mx-auto">   
+            <input type="submit" name="register" value="SignUp" class="btn btn-md btn-info text-white w-100">
+            </div>
+            <div class="input-group ms-5 mt-3  mx-auto">   
+                <b>Already have an Account?</b>&nbsp;<a href="#" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                </div>
+        </form>
+
+
+            </div>
+        </div>
+    </div>
+   <div class="contect text-center wow  animate__animated animate__fadeInUp">
+    <h1> Contect Us </h1>
+    <h5> If have any quary Regarding Books Exchange Please Fill Free to Conteact Us</h5>
+    <hr class="w-50 mx-auto">
+   </div>
+   <div class="row wow  animate__animated animate__fadeInUp container">
+    <div class="col-md-4 col-12 info text-white border border-1 rounded-3 p-4">
+        <h3>Contect Information</h3>
+        <p>Fill Up the form Our Team will  Get back to You within 24 hours. </p>
+        <ul>
+            <li><span class="bi bi-telephone"></span> +91 955 899 1020</li>
+            <li><span class="bi bi-envelope"></span> mehulnakum6695@gmail.com</li>
+            <li><span class="bi bi-geo-alt-fill"></span> 150 Feet Ring Road, Punit Nagar , Rajkot</li>
+        </ul>
+    </div>
+    <div class="col-md-6 col-12">
+        <form>
+            <div class="row g-2 m-3">
+                <div class="col-md-5">
+                  <div class="form-floating">
+                    <input type="text" class="form-control border border-0 border-bottom"  style="background-color:#FCF6F5FF;"id="floatingInputGrid" placeholder="name@example.com" required>
+                    <label for="floatingInputGrid" >First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-floating">
+                    <input type="text" class="form-control border border-0 border-bottom" style="background-color:#FCF6F5FF;"id="floatingInputGrid" placeholder="name@example.com" required>
+                    <label for="floatingInputGrid">Last Name</label>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="row g-2 m-3">
+                <div class="col-md-5">
+                  <div class="form-floating">
+                    <input type="email" class="form-control border border-0 border-bottom"  style="background-color:#FCF6F5FF;" id="floatingInputGrid" placeholder="name@example.com" required>
+                    <label for="floatingInputGrid">Mail</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-floating">
+                    <input type="text" class="form-control border border-0 border-bottom" id="floatingInputGrid" style="background-color:#FCF6F5FF;"placeholder="name@example.com" required >
+                    <label for="floatingInputGrid">Phone Nummber</label>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating m-3">
+                <textarea class="form-control border border-0 border-bottom" placeholder="Leave a comment here"  style="background-color:#FCF6F5FF;" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+              <button  type="submit" class="btn btn-outline-primary">Submit</button>
+              <button  type="reset" class="btn btn-outline-danger">Reset</button>
+        </form>
+    </div>
+   </div>
+   
+	
+<div class="footer container-fluid wow  animate__animated animate__fadeInUp mt-5">
+			
+    <div class="row">
+            <div class="col-md-4 col-12 p-5 text-center">
+                <img src="img/logo-removebg-preview.png" style="width:50%;height: 100%;" alt="logo">
+            <div class="social-media mt-3">
+                    <a href="#"> <i class="bi bi-facebook"></i></a>							
+                    <a href="#"> <i class="bi bi-instagram"></i></a>
+                    <a href="#"> <i class="bi bi-twitter"></i></a>
+        </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <h3 class="text-white mt-5">Usefull Link</h3>
+                <hr class="w-25  mx-auto bg-white">
+                <p><a href="#">Refer a Friend</a></p>
+                <p><a href="#">Offers and Rewards</a></p>
+                <p><a href="#">Central Relay Library</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Our Team</a></p>
+                <p><a href="#">Blog</a></p>
+                
+            </div>
+            <div class="col-md-4  col-12 text-center">
+                <h3 class="text-white mt-5">Usefull Link</h3>
+                <hr class="w-25 mx-auto bg-white">
+                <p><a href="#">contect us</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Payment Method</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Return Policy</a></p>
+                
+            </div>
+        </div>
+        <hr class="border border-2 border-white">
+        <div class="copy_right text-white row">
+            <div class="col-md-6">
+                <p><i class="bi bi-c-circle"></i> <b>Book Barter. All Right Reserved</b></p>
+            </div>
+            <div class="col-md-6">
+                <p align="right"><a href="#">Privacy Policy</a> <a href="#">| Terms & Conditions</a></p>
+            </div>
+            
+            
+        </div>
+</div>
+</body>
+</html>

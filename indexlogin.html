@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="CSS/indexlog.css">
+	<!-- slider css -->
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css?v2022">
+  	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css?v2022">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- wow feext js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="dist/css/accordion-slider.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>       
+
+<style type="text/css">
+	.container { margin: 50px auto; max-width: 960px; }
+ 
+	 .slick-prev:before,
+	 .slick-next:before {
+	   color: #990011FF;
+	 }
+ 
+ </style>
+</head>
+<body>
+	<!-- navbar start -->
+    <section class="container-fluid fixed-top main-navbar">
+        <div class=" nav navbar navbar-expand-md fixed-top">
+            <a href="#" class="w-25 navbar-brand "><img src="img/logo-removebg-preview.png"  alt="Logo"></a>
+            <button class="navbar-toggler text-white"  type="button" data-bs-toggle="collapse" data-bs-target="#nav-btn">
+                <span class="bi bi-grid-3x3-gap-fill"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center m-0 p-0" id="nav-btn">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="indexlogin.html"> Home</a></li>
+                <li class="nav-item"><a href="myaccount.html"> My Account </a></li>
+                <li class="nav-item"><a href="#categories"> Categories</a></li>
+                <li class="nav-item"><a href="index.html"> logout </a></li>
+                <li class="nav-item"><a href="contectus.html"> Contect us</a></li>
+				<li class="nav-item"><a href="cart.html"> <span class="bi bi-cart3"> </span> Cart</a></li>
+            </ul>
+			<span class="nav-item"><img  class="img-thumbnail rounded-circle " src="https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg"  style="height: 50px; width: 50px;"></span>  
+            </div>            
+        </div>
+    </section>
+	<!-- navbar end -->
+	
+	    
+<div class="container search wow  animate__animated animate__fadeInUp">
+	<h3 class="text-center">Search Books</h3>
+<div class="input-group mb-3 w-50 mx-auto">
+	<select class="custom-select select-search-option btn btn-outline-secondary dropdown-toggle " name="search_type" id="book_options" onchange="javascript:bookOptionPopup();"> 
+		<option value="get_book">Get a Book</option>
+		<option value="give_book">Give a Book</option> 
+	</select>
+	<input type="text" class="form-control" aria-label="Text input with dropdown button">
+  </div>
+</div>
+
+		<section class="container avilable-books mt-5 wow  animate__animated animate__fadeInUp">
+			<div class="row">
+				<div class="col-md-6 p-0 m-0"> <h2 class="m-0 ">Avilable-Books</h2></div>
+				<div class="col-md-6 p-0"> <p class="m-0 p-0" align="right"><a href="#">View All...</a></p></div>
+			</div>
+		
+			<hr>
+			<div class="container ">
+				
+				<section class="regular slider text-center ">
+				  <div>
+					<section class="card books" style="width: 18rem;">
+					 <a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					  <div class="card-body">
+						<h5 class="card-title">Sharpe's fortress</h5>
+					  </a>
+						<hr>
+						<p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+						<p class="card-text"> <b>Language:</b>English</p>
+						<button class="btn" onclick="document.getElementById('demo').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo"></p>
+						<p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					  </section>
+				  </div>
+				  <div>
+					<section class="card books" style="width: 18rem;">
+						<a href="#" class="text-decoration-none"><img src="img/avilable books/avb2.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+						 <div class="card-body">
+						   <h5 class="card-title">The Famous Five</h5>
+						 </a>
+						   <hr>
+						   <p class="card-text"> <b>Author:</b>Enid Blyton</b></p>
+						   <p class="card-text"> <b>Language:</b>English</p>
+						   <button class="btn" onclick="document.getElementById('demo1').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo1"></p>
+						   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+						 </section>
+				  </div>
+				  <div>
+					<section class="card books" style="width: 18rem;">
+						<a href="#" class="text-decoration-none"><img src="img/avilable books/avb3.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+						 <div class="card-body">
+						   <h5 class="card-title">Rules of Command</h5>
+						 </a>
+						   <hr>
+						   <p class="card-text"> <b>Author:</b>C.A.Mobley</b></p>
+						   <p class="card-text"> <b>Language:</b>English</p>
+						   <button class="btn" onclick="document.getElementById('demo2').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo2"></p>
+						   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+						 </section>
+				  </div>
+				  <div>
+					<section class="card books" style="width: 18rem;">
+						<a href="#" class="text-decoration-none"><img src="img/avilable books/avb4.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+						 <div class="card-body">
+						   <h5 class="card-title">Iacocca an autobiography</h5>
+						 </a>
+						   <hr>
+						   <p class="card-text"> <b>Author:</b>Lee Iacocca </b></p>
+						   <p class="card-text"> <b>Language:</b>English</p>
+						   <button class="btn" onclick="document.getElementById('demo3').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo3"></p>
+						   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+						 </section>
+				  </div>
+				  <div>
+					<section class="card books" style="width: 18rem;">
+						<a href="#" class="text-decoration-none"><img src="img/avilable books/avb5.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+						 <div class="card-body">
+						   <h5 class="card-title">Horrible : Dreadful Diary</h5>
+						 </a>
+						   <hr>
+						   <p class="card-text"> <b>Author:</b>Terry Deary</b></p>
+						   <p class="card-text"> <b>Language:</b>English</p>
+						  <button class="btn" onclick="document.getElementById('demo4').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo4"></p>
+						   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+						 </section>
+				  </div>
+				  <div>
+					<section class="card books" style="width: 18rem;">
+						<a href="#" class="text-decoration-none"><img src="img/avilable books/avb6.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+						 <div class="card-body">
+						   <h5 class="card-title">Edexcel GCE in Applied ICT</h5>
+						 </a>
+						   <hr>
+						   <p class="card-text"> <b>Author:</b>Trevor Heathcote</b></p>
+						   <p class="card-text"> <b>Language:</b>English</p>
+						  <button class="btn" onclick="document.getElementById('demo5').innerHTML='Added in Cart'" style="background-color: #990011FF; color: white;">Add to Cart</button>
+						<span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+						<p id="demo5"></p>
+						   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+						 </section>
+				  </div>
+				</section>
+				</div>
+				<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+				<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+				<script src="./slick/slick.js?v2022" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript">
+					
+				  $(document).on('ready', function() {
+					const mediaQuery = window.matchMedia('(min-width: 768px)')
+						// Check if the media query is true
+						if (mediaQuery.matches) {
+						// Then trigger an alert
+						$(".regular").slick({
+							dots: true,
+							infinite: true,
+							slidesToShow: 3,
+							slidesToScroll: 3,
+						});
+						}
+						else
+						{
+							$(".regular").slick({
+							dots: true,
+							infinite: true,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						});
+						}
+								
+						});
+			  </script>
+			
+	</section>
+	<section class="container most-popular mt-5 wow  animate__animated animate__fadeInUp ">
+		<h2>Most Popular</h2>
+		<hr>
+		<div class="container">
+			
+			<section class="regular slider text-center">
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Scion of Ikshvaku</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Amish Tripathi</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp2.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">The Parable of the Pipeline</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Burke Hedges</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp3.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">The Monk Who Sold His</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Robin Sharma</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp4.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Immortals of Meluha</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Amish Tripathi</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp5.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Concepts of Physics 1</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Harish Chandra Verma</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/mostpopular/mp6.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Wings of Fire</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b> Jainulabdeen Abdul Kalam</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			</section>
+			</div>
+	</section>
+	<section class="container read-author mt-5 wow  animate__animated animate__fadeInUp">
+		<h2>From the Most Read Author</h2>
+		<hr>
+		<div class="container">
+			
+			<section class="regular slider text-center">
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			</section>
+			</div>
+	</section>
+	<section class="container new-arrivals mt-5 wow  animate__animated animate__fadeInUp">
+		<h2>New Arrivals</h2>
+		<hr>
+		<div class="container">
+			
+			<section class="regular slider text-center">
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			  <div>
+				<section class="card books" style="width: 18rem;">
+					<a href="#" class="text-decoration-none"><img src="img/avilable books/avb1.jpg" class="card-img-top mx-auto mt-3" style="width: 150px; height: 220px;" alt="avb1">
+					 <div class="card-body">
+					   <h5 class="card-title">Sharpe's fortress</h5>
+					 </a>
+					   <hr>
+					   <p class="card-text"> <b>Author:</b>Bernard cornwel</b></p>
+					   <p class="card-text"> <b>Language:</b>English</p>
+					   <a href="#" class="btn text-white m-3" style="background-color:#990011FF ;">Add to Cart</a>
+					   <span><div class="lik-btn btn"><i class="bi bi-heart-fill"></i></div></span>
+					   <p style="color: #990011FF;"> Whatsapp who has this book <a href="https://api.whatsapp.com/send?phone=9558991020&text=Hi, %20I%20want%20your%20book" target="blank"><button type="button" class="btn btn-success"><i class=" bi bi-whatsapp"></i></button></a></p>
+					 </section>
+			  </div>
+			</section>
+			</div>
+	</section>
+	<div class="container wow  animate__animated animate__fadeInUp" id="categories">
+	<div class="row m-2">
+		<div class="col-11 col-md-3 categories m-2" >
+		<div class="blur"></div>
+		<a href="#"><h1 class="text-white p-2 position-absolute">Adventure stories</h1></a>
+		</div>
+		<div class=" col-11 col-md-8">
+			<div class="row">
+				<div class="col-12 col-sm-5  m-2 categories1">
+					<div class="blur"></div>
+				<a href="#"><h1 class="text-white p-2 position-absolute">Historical fiction</h1></a>
+				</div>
+				<div class="col-12 col-sm-5 m-2 categories2">
+					<div class="blur"></div>
+					<a href="#"><h1 class="text-white p-2 position-absolute">Literary fiction</h1></a>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-3 m-2 categories3">
+						<div class="blur"></div>
+						<a href="#"><h2 class="text-white p-2 position-absolute">Mystery</h2></a>
+					</div>
+					<div class="col-12 col-sm-3 m-2 categories4">
+						<div class="blur"></div>
+						<a href="#"><h2 class="text-white p-2 position-absolute">Thrillers</h2></a>
+					</div>
+					<div class="col-12 col-sm-4 m-2 categories5">
+						<div class="blur"></div>
+						<a href="#"><h2 class="text-white p-2 position-absolute">Short stories</h2></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">		
+		<section class="client slider text-center">
+		  <div>
+			<img src="https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg"  alt="client img">
+			<hr>
+			<p class="text-center">The platform boasts an extensive collection of books across various genres and categories. Whether you're into classic literature, contemporary fiction, non-fiction, self-help, or even niche subjects, you'll find an incredible array of titles to choose from. This expansive selection ensures that there is something for everyone, catering to diverse reading preferences.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		  <div>
+			<img src="https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0="  alt="client img">
+			<hr>
+			<p>One of the most significant advantages of this online exchange system is its cost-effectiveness. Rather than spending a fortune on purchasing new books or subscribing to expensive e-book platforms, this system allows users to exchange books with other like-minded readers. By sharing books, users can significantly reduce their expenses while still enjoying a wide range of literary works.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		  <div>
+			<img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80"  alt="client img">
+			<hr>
+			<p>Navigating through the platform is a breeze, even for those who might not be particularly tech-savvy. The user-friendly interface makes it simple to search for books, create listings, and connect with other readers. The system also provides helpful filters, enabling users to refine their search based on specific criteria such as genre, author, or language. The intuitive design ensures a smooth and enjoyable experience for users of all ages.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		  <div>
+			<img src="https://t4.ftcdn.net/jpg/02/97/24/51/360_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar.jpg"  alt="client img">
+			<hr>
+			<p>This online exchange system creates a vibrant community of book enthusiasts who share a common love for reading. It fosters a sense of camaraderie among users, promoting discussions, recommendations, and even the opportunity to connect with like-minded individuals. The platform often organizes virtual book clubs or reading challenges, further enhancing the sense of community and encouraging active participation.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		  <div>
+			<img src="https://t4.ftcdn.net/jpg/01/15/85/23/360_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"  alt="client img">
+			<hr>
+			<p>In an era where environmental consciousness is crucial, this online books exchange system shines by promoting sustainability. By encouraging the reuse of books, it helps reduce the demand for new book production and minimizes the environmental impact associated with publishing and distribution. It's an excellent way to contribute to a greener world while indulging in our love for reading.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		  <div>
+			<img src="https://st4.depositphotos.com/2760050/24301/i/600/depositphotos_243011410-stock-photo-man-with-bristle-on-calm.jpg"  alt="client img">
+			<hr>
+			<p>The online books exchange system ensures the privacy and security of its users. It employs robust measures to protect personal information and facilitate secure book exchanges. The system also incorporates user ratings and reviews, helping build a trustworthy community and ensuring reliable interactions between readers.</p>
+			<a href="#" class="btn red-btn"> Read more >></a>
+		  </div>
+		</section>
+		</div>
+		<script type="text/javascript">
+				
+			$(document).on('ready', function() {
+				$(".client").slick({
+					  dots: true,
+					  infinite: true,
+					  slidesToShow: 1,
+					  slidesToScroll: 1,
+				  });
+				  });
+		</script>
+</section>
+	</div>
+
+
+<div class="footer container-fluid wow  animate__animated animate__fadeInUp">
+			
+			<div class="row">
+					<div class="col-md-4 col-12 p-5 text-center">
+						<img src="img/logo-removebg-preview.png" style="width:50%;height: 100%;" alt="logo">
+					<div class="social-media mt-3">
+							<a href="#"> <i class="bi bi-facebook"></i></a>							
+							<a href="#"> <i class="bi bi-instagram"></i></a>
+							<a href="#"> <i class="bi bi-twitter"></i></a>
+				</div>
+					</div>
+					<div class="col-md-4 col-12 text-center">
+						<h3 class="text-white mt-5">Usefull Link</h3>
+						<hr class="w-25  mx-auto bg-white">
+						<p><a href="#">Refer a Friend</a></p>
+						<p><a href="#">Offers and Rewards</a></p>
+						<p><a href="#">Central Relay Library</a></p>
+						<p><a href="#">About Us</a></p>
+						<p><a href="#">Our Team</a></p>
+						<p><a href="#">Blog</a></p>
+						
+					</div>
+					<div class="col-md-4  col-12 text-center">
+						<h3 class="text-white mt-5">Usefull Link</h3>
+						<hr class="w-25 mx-auto bg-white">
+						<p><a href="contectus.html">contect us</a></p>
+						<p><a href="#">Privacy Policy</a></p>
+						<p><a href="#">Payment Method</a></p>
+						<p><a href="#">FAQ</a></p>
+						<p><a href="#">Return Policy</a></p>
+						
+					</div>
+				</div>
+				<hr class="border border-2 border-white">
+				<div class="copy_right text-white row">
+					<div class="col-md-6">
+						<p><i class="bi bi-c-circle"></i> <b>Book Barter. All Right Reserved</b></p>
+					</div>
+					<div class="col-md-6">
+						<p align="right"><a href="#">Privacy Policy</a> <a href="#">| Terms & Conditions</a></p>
+					</div>
+					
+					
+				</div>
+</div>
+</body>
+</html>
